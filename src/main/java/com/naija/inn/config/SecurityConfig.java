@@ -1,4 +1,5 @@
 package com.naija.inn.config;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -16,7 +17,23 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf().disable().authorizeHttpRequests(auth -> auth.requestMatchers("/api/admin/**").hasRole("ADMIN").anyRequest().permitAll()).formLogin().and().logout();
+        http.csrf().disable() // Disable CSRF if necessary
+                .authorizeHttpRequests(auth -> {
+                    auth.requestMatchers("/api/admin/**").hasAuthority("ROLE_ADMIN")
+                            .anyRequest().permitAll(); // Adjust as needed
+                })
+                .formLogin(login -> login
+                        .loginPage("/login") // Optional: Define custom login page
+                        .defaultSuccessUrl("/", true)
+                        .failureUrl("/login?error")
+                )
+                .logout(logout -> logout
+                        .logoutUrl("/logout") // Optional: Define custom logout URL
+                        .logoutSuccessUrl("/login?logout")
+                        .invalidateHttpSession(true)
+                        .deleteCookies("JSESSIONID")
+                );
+
         return http.build();
     }
 }

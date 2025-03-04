@@ -1,0 +1,6 @@
+{
+  "timestamp": "2025-03-04T15:37:47.917+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/api/rooms/available"
+}

@@ -1,0 +1,3 @@
+### GET request with a header
+GET http://localhost:9696/api/rooms/available
+Accept: application/json

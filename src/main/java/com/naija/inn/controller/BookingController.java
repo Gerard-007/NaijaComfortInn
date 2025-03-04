@@ -32,5 +32,6 @@ public class BookingController {
             @RequestParam int nights,
             @RequestParam boolean isFestivePeriod) {
         return bookingService.calculatePayment(roomType, nights, isFestivePeriod);
+
     }
 }
