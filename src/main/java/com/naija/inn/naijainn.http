@@ -1,3 +1,4 @@
-### GET request with a header
+### GET availabe rooms
 GET http://localhost:9696/api/rooms/available
 Accept: application/json
+

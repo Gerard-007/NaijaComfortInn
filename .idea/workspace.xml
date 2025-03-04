@@ -5,31 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291d7fbe-d5d1-41a3-a275-8d66857ac58d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/0fc38ef8-941a-4564-88d1-276c50b570d0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/280bb5f7-98c3-4f7e-a06f-da129653b584.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-03-03T175935.404.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-03-03T180032.404.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-03-03T180956.404.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-03-04T160611.404.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-03-04T161408.404.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-03-04T162830.404.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-03-04T162906.404.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-03-04T163254.500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-03-04T163747.500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-03-04T164053.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/naija/inn/naijainn.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/naija/inn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/naija/inn/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/naija/inn/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/naija/inn/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/naija/inn/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/naija/inn/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/naija/inn/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/naija/inn/controller/PaymentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/naija/inn/naijainn.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/naija/inn/naijainn.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +50,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.naijainn | GET availabe rooms.executor": "Run",
     "HTTP Request.naijainn | GET request with a header.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -97,7 +79,10 @@
       <recent name="C:\Users\DELL USER\IdeaProjects\NaijaComfortInn\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.naijainn | GET request with a header">
+  <component name="RunManager" selected="HTTP Request.naijainn | GET availabe rooms">
+    <configuration name="naijainn | GET availabe rooms" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/com/naija/inn/naijainn.http" requestIdentifier="GET availabe rooms" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="naijainn | GET request with a header" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/com/naija/inn/naijainn.http" requestIdentifier="GET request with a header" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -116,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.naijainn | GET availabe rooms" />
         <item itemvalue="HTTP Request.naijainn | GET request with a header" />
         <item itemvalue="Spring Boot.Main" />
       </list>
@@ -139,7 +125,7 @@
       <updated>1740912306952</updated>
       <workItem from="1740912308595" duration="4806000" />
       <workItem from="1741019962863" duration="1864000" />
-      <workItem from="1741020146753" duration="12287000" />
+      <workItem from="1741020146753" duration="15912000" />
     </task>
     <servers />
   </component>

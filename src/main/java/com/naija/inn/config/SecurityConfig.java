@@ -17,18 +17,18 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf().disable() // Disable CSRF if necessary
+        http.csrf().disable()
                 .authorizeHttpRequests(auth -> {
                     auth.requestMatchers("/api/admin/**").hasAuthority("ROLE_ADMIN")
-                            .anyRequest().permitAll(); // Adjust as needed
+                            .anyRequest().permitAll();
                 })
                 .formLogin(login -> login
-                        .loginPage("/login") // Optional: Define custom login page
+                        .loginPage("/login")
                         .defaultSuccessUrl("/", true)
                         .failureUrl("/login?error")
                 )
                 .logout(logout -> logout
-                        .logoutUrl("/logout") // Optional: Define custom logout URL
+                        .logoutUrl("/logout")
                         .logoutSuccessUrl("/login?logout")
                         .invalidateHttpSession(true)
                         .deleteCookies("JSESSIONID")
